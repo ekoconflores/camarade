@@ -2,3 +2,6 @@ site_name: camarade
 
 theme:
   name: material
+  font:
+    text: Rubik
+    mono: IBM Plex Mono
