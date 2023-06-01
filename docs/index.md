@@ -1,9 +1,3 @@
-# Inicio
+# Bienvenide
 
 holi c:
-
-```c
-int main() {
-  return 1;
-}
-```

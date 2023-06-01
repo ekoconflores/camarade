@@ -5,10 +5,29 @@ repo_name: josekoalas/camarade
 edit_uri: edit/main/docs/
 
 nav:
-  - Section:
-    - seccion/index.md 
-    - Page 1: seccion/pagina1.md
-    - Page n: seccion/pagina2.md
+  - Empieza aquí:
+    - index.md 
+    - Entorno de desarrollo: empieza_aqui/entorno_desarrollo.md
+    - Pruebas: empieza_aqui/pruebas.md
+  - Asignaturas:
+    - asignaturas/index.md
+    - Primero:
+      - asignaturas/primero/index.md
+      - Programacion I: asignaturas/primero/programacion_i.md
+      - Programacion II: asignaturas/primero/programacion_ii.md
+    - Segundo:
+      - asignaturas/segundo/index.md
+    - Tercero:
+      - asignaturas/tercero/index.md
+    - Cuarto:
+      - asignaturas/cuarto/index.md
+  - Recursos:
+    - recursos/index.md
+    - Libros: recursos/libros.md
+  - Sobre el grado:
+    - grado/index.md
+    - Exámenes: grado/examenes.md
+    - Horarios y grupos: grado/horarios.md
 
 theme:
   name: material
@@ -52,9 +71,6 @@ theme:
 
 plugins:
   - search
-  - git-revision-date-localized:
-      fallback_to_build_date: true
-      type: datetime
   - git-committers:
       repository: josekoalas/camarade
       branch: main
