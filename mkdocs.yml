@@ -12,6 +12,7 @@ nav:
 
 theme:
   name: material
+  custom_dir: overrides
   language: es
   icon:
     logo: octicons/dependabot-16
@@ -46,6 +47,8 @@ theme:
     - search.highlight
     - search.share
     - content.action.edit
+    - content.code.annotate
+    - content.code.copy
 
 plugins:
   - search
@@ -55,11 +58,45 @@ plugins:
   - git-committers:
       repository: josekoalas/camarade
       branch: main
-  
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - pymdownx.betterem
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.keys
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.snippets
+
 extra_css:
   - extra/extra.css
 extra_javascript:
   - extra/extra.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra:
   generator: false

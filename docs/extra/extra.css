@@ -36,12 +36,13 @@
     font-weight: normal;
 }
 
-:root {
+:root > * {
     --md-code-font: "ml";
     --md-text-font: "gl";
+    --md-code-hl-color: #448aff1a;
 }
 
-p {
+p, li {
     font-family: "sf";
 }
 
