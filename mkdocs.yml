@@ -1,7 +1,65 @@
-site_name: camarade
+site_name: Camarade
+
+repo_url: https://github.com/josekoalas/camarade
+repo_name: josekoalas/camarade
+edit_uri: edit/main/docs/
+
+nav:
+  - Section:
+    - seccion/index.md 
+    - Page 1: seccion/pagina1.md
+    - Page n: seccion/pagina2.md
 
 theme:
   name: material
-  font:
-    text: Rubik
-    mono: IBM Plex Mono
+  language: es
+  icon:
+    logo: octicons/dependabot-16
+    repo: fontawesome/brands/github
+  favicon: assets/images/favicon.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: pink
+      accent: amber
+      toggle:
+        icon: material/brightness-2
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: pink
+      accent: amber
+      toggle:
+        icon: material/brightness-5
+        name: Cambiar a modo claro
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.path
+    - navigation.indexes
+    - navigation.footer
+    - toc.follow
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.action.edit
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+      type: datetime
+  - git-committers:
+      repository: josekoalas/camarade
+      branch: main
+  
+extra_css:
+  - extra/extra.css
+extra_javascript:
+  - extra/extra.js
+
+extra:
+  generator: false

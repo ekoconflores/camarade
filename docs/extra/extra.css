@@ -1,0 +1,55 @@
+@font-face {
+    font-family: ml;
+    src: url(../assets/fonts/ml/ml-regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: ml;
+    src: url(../assets/fonts/ml/ml-bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: ml;
+    src: url(../assets/fonts/ml/ml-it.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: ml;
+    src: url(../assets/fonts/ml/ml-bold-it.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: gl;
+    src: url(../assets/fonts/gl/gl-bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: sf;
+    src: url(../assets/fonts/sf/sf.ttf);
+    font-weight: normal;
+}
+
+:root {
+    --md-code-font: "ml";
+    --md-text-font: "gl";
+}
+
+p {
+    font-family: "sf";
+}
+
+.md-tag {
+    font-family: "ml";
+    color: var(--md-primary-fg-color);
+}
+
+.md-footer-meta {
+    display: none;
+}
